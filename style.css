@@ -44,7 +44,8 @@ body {
 
 #options {
     display: flex;
-    width: 50vw;
+    width: 50%;
+    /* border: 1px solid black; */
     justify-content: space-evenly;
     margin-top: 2rem;
 }
