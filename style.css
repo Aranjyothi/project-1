@@ -1,11 +1,16 @@
-body{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-background-color: aqua;
-color: brown;
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+    color: brown;
 }
-#game{
+
+#style {
+    font-size: 50px;
+}
+
+#game {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -13,13 +18,15 @@ color: brown;
     justify-content: center;
     align-items: center;
 }
-#title{
+
+#title {
     position: absolute;
     top: 0;
     font-size: 4rem;
     z-index: 2;
 }
-#score{
+
+#score {
     display: flex;
     width: 30vw;
     justify-content: space-evenly;
@@ -27,18 +34,24 @@ color: brown;
     top: 70px;
     z-index: 1;
 }
-#p-count,#c-count{
-text-align: center;
-font-size: 1.5rem;
-margin-top: 1rem;
+
+#p-count,
+#c-count {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
-#options{
+
+#options {
     display: flex;
     width: 50vw;
     justify-content: space-evenly;
     margin-top: 2rem;
 }
-#rock, #paper, #scissors{
+
+#rock,
+#paper,
+#scissors {
     padding: 0.8rem;
     width: 100px;
     border-radius: 10px;
@@ -48,34 +61,39 @@ margin-top: 1rem;
     cursor: pointer;
 
 }
-#choice{
+
+#choice {
     font-size: 2rem;
     font-weight: bold;
 }
-.result{
+
+.result {
     margin-top: 20px;
     font-size: 1.2rem;
 }
- 
-#reset{
+
+#reset {
     display: none;
     margin-top: 2rem;
     padding: 1rem;
-    background:green;
+    background: green;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
 }
+
 @media screen and (max-width:600px) {
-    #title{
+    #title {
         text-align: center;
     }
-    #score{
+
+    #score {
         position: absolute;
-        top: 200px;
+        top: 100px;
         width: 100vw;
     }
-    #options{
+
+    #options {
         width: 100vw;
     }
 }

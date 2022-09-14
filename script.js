@@ -1,68 +1,109 @@
 const game = () => {
     let playerScore = 0;
     let computerScore = 0;
+    let playerChoose
+    let computerChoose
     let choice = 0;
     const playGame = () => {
         const rockBtn = document.querySelector('#rock');
         const paperBtn = document.querySelector('#paper');
         const scissorsBtn = document.querySelector('#scissors');
         const playerOptions = [rockBtn, paperBtn, scissorsBtn];
-        const computerOptions = ['rock', 'paper', 'scissors']
+        const computerOptions = ['rock', 'paper', 'scissors'];
+        const possibleChoice = document.querySelectorAll('#p-choose','#c-choose')
+       
+        possibleChoice.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+            player = e.target.id
+             playerChoose.innerHTML = userChoice
+            generateComputerChoice()
+        }))
+        function generateComputerChoice(){
+            const randomNumber = Math.floor(Math.random()*possibleChoice.length) +1
+        
+        if (randomNumber == 1){
+            computerChoice = 'rock'
+        }
+        if (randomNumber == 2){
+            computerChoice = 'paper'
+        }
+        if (randomNumber == 3){
+            computerChoice = 'scissors'
+        }
+        computerChoiceDisplay.innerHTML = computerChoice
+        
         //function to start playing game
         playerOptions.forEach(option => {
             option.addEventListener('click', function () {
-                const choiceLeft = document.querySelector('#choiceleft');
+                const choiceLeft = document.querySelector('#choiceleft');   
                 choice++;
-                choiceLeft.innerText = `Choice Left:${10 - choice}`;
+                choiceLeft.innerText = `Choice Left: ${10 - choice}`;
                 const moveNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[moveNumber];
                 //check who wins!
-                winner(this.innerText, computerChoice)
+                winner(this.id, computerChoice)
                 //game over function after 10 choices
                 if (choice == 10) {
                     gameOver(playerOptions, choiceLeft);
                 }
             })
         })
-        //Function to decide a winner
+        //     //Function to decide a winner
         const winner = (player, computer) => {
             const result = document.querySelector('#result');
-            const playerScoreBoard = document.querySelector('#p-count');
-            const computerScoreBoard = document.querySelector('#c-count');
+            const playerScoreBoard = document.querySelector("#p-count");
+            const computerScoreBoard = document.querySelector("#c-count");
+
+
+
+            // const playerScoreBoard = document.getElementById('p-count');
+            // const computerScoreBoard = document.getElementById('c-count');
             player = player.toLowerCase();
             computer = computer.toLowerCase();
             if (player === computer) {
                 result.textContent = 'Tie'
             } else if (player == 'rock') {
                 if (computer == 'paper') {
-                    result.textContent = 'Computer Won';
+                    result.innerHTML = 'Computer Won';
                     computerScore++;
-                    computerScoreBoard.textContent = computerScore;
+                    computerScoreBoard.innerHTML = computerScore;
+                    computerChooseBoard.innerHTML = computerChoose;
+
+
                 } else {
-                    result.textContent = 'Player Won';
+                    result.innerHTML = 'Player Won';
                     playerScore++;
-                    playerScoreBoard.textContent = playerScore;
+                    playerScoreBoard.innerHTML = playerScore;
+                    playerChooseBoard.innerHTML = playerChoose;
                 }
             } else if (player == 'scissors') {
                 if (computer == 'rock') {
-                    result.textContent = 'Computer Won';
+                    result.innerHTML = 'Computer Won';
                     computerScore++;
-                    computerScoreBoard.textContent = computerScore;
+                    computerScoreBoard.innerHTML = computerScore;
+                    computerChooseBoard.innerHTML = computerChoose;
                 } else {
-                    result.textContent = 'Player Won';
+                    result.innerHTML = 'Player Won';
                     playerScore++;
-                    playerScoreBoard.textContent = playerScore;
+                    playerScoreBoard.innerHTML = playerScore;
+                    playerChooseBoard.innerHTML = playerChoose;
                 }
             } else if (player == 'paper') {
                 if (computer == 'scissors') {
-                    result.textContent = 'Computer Won';
+                    result.innerHTML = 'Computer Won';
                     computerScore++;
-                    computerScoreBoard.textContent = computerScore;
+                    computerScoreBoard.innerHTML = computerScore;
+                    computerChooseBoard.innerHTML = computerChoose;
                 } else {
-                    result.textContent = 'Player Won';
+                    result.innerHTML = 'Player Won';
                     playerScore++;
-                    playerScoreBoard.textContent = playerScore;
+
+                    playerScoreBoard.innerHTML = playerScore;
+                    playerChooseBoard.innerHTML = playerChoose;
+
                 }
+
+                // computerScoreBoard.textContent = computerScore;
+                // playerScoreBoard.textContent = playerScore
             }
         }
     }
@@ -90,16 +131,21 @@ const game = () => {
             result.innerText = 'Tie';
             result.style.color = 'yellowgreen'
         }
+
         resetBtn.innerText = 'Restart';
         resetBtn.style.display = 'flex';
         resetBtn.addEventListener('click', () => {
-            window.location.reset();
+            window.location.reload();
         })
+
     }
 
     playGame();
 }
+}
 game();
+
+
 
 
 
