@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game
 Your site is live at https://aranjyothi.github.io/project-1-rock-paper-scissors/
-Last deployed by @github-pages github-pages 1 minute ago
+
 # About the Game
 
 ## Languages used in this  game
