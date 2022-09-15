@@ -21,9 +21,9 @@ body {
 
 #title {
     position: absolute;
-    top: 0;
+    top: 50px;
     font-size: 4rem;
-    z-index: 2;
+    
 }
 
 #score {
@@ -31,8 +31,7 @@ body {
     width: 30vw;
     justify-content: space-evenly;
     position: absolute;
-    top: 70px;
-    z-index: 1;
+    top: 110px;
 }
 
 #p-count,
@@ -45,9 +44,14 @@ body {
 #options {
     display: flex;
     width: 50%;
-    /* border: 1px solid black; */
+    margin: 10px;
+    padding-left: 100px;
     justify-content: space-evenly;
     margin-top: 2rem;
+    transition: 100ms;
+}
+#options:hover {
+    transition: scale(1.1);
 }
 
 #rock,
