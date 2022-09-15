@@ -4,7 +4,7 @@ Last deployed by @github-pages github-pages 1 minute ago
 # About the Game
 
 ## Languages used in this  game
-JavaScript, HTML,and CSS 
+HTML, CSS, and JavaScript
 ## Inbult functions are:
 * for each
 * addEventListener
@@ -17,7 +17,7 @@ playerOptions.forEach(option => {
 * Math.floor(Math.random() * 3)
     #### code:  const moveNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[moveNumber];
-# Rules of the Game
+# Game rules
 Player has 10 choices to play the game.
 1. If player choose any "Rock or Paper or Scissors"options!, computer will choose  ramdom options.
 2. If both player and computer choose same options the game will be "Tie".
