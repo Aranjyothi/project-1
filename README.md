@@ -18,7 +18,7 @@ playerOptions.forEach(option => {
     #### code:  const moveNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[moveNumber];
 # Rules of the Game
-Player has 10 choices to play this game.
+Player has 10 choices to play the game.
 1. If player choose any "Rock or Paper or Scissors"options!, computer will choose  ramdom options.
 2. If both player and computer choose same options the game will be "Tie".
 3. If player choose "Rock" and computer choose "paper", so computer will win.
