@@ -6,12 +6,12 @@ Last deployed by @github-pages github-pages 1 minute ago
 ## Languages used in this  game
 JavaScript, HTML,and CSS 
 ## Inbult functions are:
-*for each
-*addEventListener
-*document.querySelector
-*if and else if conditions
-*innerText
-*Math.floor(Math.random() * 3)
+* for each
+* addEventListener
+* document.querySelector
+* if and else if conditions
+* innerText
+* Math.floor(Math.random() * 3)
     #### code:  const moveNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[moveNumber];
 # Rules of the Game
