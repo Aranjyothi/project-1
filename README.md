@@ -1,5 +1,5 @@
 # Rock Paper Scissors Game
-Your site is live at https://aranjyothi.github.io/project-1-rock-paper-scissors/
+Site is live at https://aranjyothi.github.io/project-1-rock-paper-scissors/
 
 # About the Game
 
