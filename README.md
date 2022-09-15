@@ -8,6 +8,9 @@ JavaScript, HTML,and CSS
 ## Inbult functions are:
 * for each
 * addEventListener
+##### Code
+playerOptions.forEach(option => {
+            option.addEventListener('click', function () {
 * document.querySelector
 * if and else if conditions
 * innerText
