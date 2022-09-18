@@ -50,9 +50,9 @@ body {
     margin-top: 2rem;
     transition: 100ms;
 }
-#options:hover {
+/* #options:hover {
     transition: scale(1.1);
-}
+} */
 
 #rock,
 #paper,
