@@ -9,7 +9,7 @@ Rock paper scissors is a hand game usually played between two people, in which e
 ## Inbult functions are:
 *for each
 *addEventListener
-      playerOptions.forEach(option => {
+      playerOptions.forEach(option => { 
             option.addEventListener('click', function () {
 *document.querySelector
 *if and else if conditions
@@ -28,7 +28,7 @@ In this game player has 10 choices to play this game.
 5. If player choose "Paper" and computer choose "Scissors" so computer will win.
 6. If player choose"rock" and computer choose "Scissors" so player will win.
 
-## Algorothm:
+## Algorithm:
 
 1. The computer will choose a random choice between "Rock", "Paper" and "Scissor". 
         const moveNumber = Math.floor(Math.random() * 3);
