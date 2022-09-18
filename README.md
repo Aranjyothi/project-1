@@ -1,5 +1,5 @@
 # Rock Paper Scissors Game
-Site is live at https://aranjyothi.github.io/project-1-rock-paper-scissors/
+    Site is live at https://aranjyothi.github.io/project-1-rock-paper-scissors/
 
 # About the Game:
 Rock paper scissors is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock", "paper", and "scissors". This JavaScript Program is aimed at automating one of the player called as Computerized Player and the taking rock, paper or scissor as an input from the used.
@@ -9,7 +9,7 @@ Rock paper scissors is a hand game usually played between two people, in which e
 ## Inbult functions are:
 *for each
 *addEventListener
-   ##### playerOptions.forEach(option => {
+      playerOptions.forEach(option => {
             option.addEventListener('click', function () {
 *document.querySelector
 *if and else if conditions
