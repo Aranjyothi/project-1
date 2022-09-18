@@ -7,14 +7,14 @@ Rock paper scissors is a hand game usually played between two people, in which e
 ## Languages used in this  game
  HTML, CSS, and JavaScript
 ## Inbult functions are:
-*for each
-*addEventListener
+* for each
+* addEventListener
       playerOptions.forEach(option => { 
             option.addEventListener('click', function () {
-*document.querySelector
-*if and else if conditions
-*innerText
-*Math.floor(Math.random() * 3)
+* document.querySelector
+* if and else if conditions
+* innerText
+* Math.floor(Math.random() * 3)
     #### code:  const moveNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[moveNumber];
 # Game rules: 
